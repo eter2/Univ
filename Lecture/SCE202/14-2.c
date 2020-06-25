@@ -1,4 +1,4 @@
-﻿// Hashing_Liner Probing
+﻿// Hashing_Linear Probing
 // 데이터를 저장하고 탐색하는 hashing 프로그램
 
 #define _CRT_SECURE_NO_WARNINGS
