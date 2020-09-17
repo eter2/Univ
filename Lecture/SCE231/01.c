@@ -29,23 +29,12 @@ void merge_sort(int arr[], int temp[], int start, int end) {
 	merge_sort(arr, temp, mid + 1, end);
 	merge(arr, temp, start, end);
 
-	if (end == MAX - 1) {
-		print(temp);
-	}
+	print(arr);
 }
 
 void merge(int arr[], int temp[], int start, int end) {
 	int mid = (start + end) / 2;
 	int idx = start, idx1 = start, idx2 = mid + 1;
-
-	if (start == 0 && end == 3 && flag == 0) {
-		flag = 1;
-		return;
-	}
-
-	if (start == 4 && end == 7) {
-		merge(arr, temp, 0, 3);
-	}
 
 	while (idx1 <= mid && idx2 <= end) {
 		if (arr[idx1] < arr[idx2]) {
